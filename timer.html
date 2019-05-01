@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countdown Timer</title>
+	<meta charset="utf-8">
+	<script src="timer21.js"></script>
+	<link rel="stylesheet" type="text/css" href="timer.css">
+</head>
+<body>
+	<table>
+			<h1>Countdown Timer</h1>
+			<span id="error" style="color:red;font-size:2em;"></span>
+		<div class="name">
+		<tr>
+			<th colspan="2">Hour</th>
+			<th colspan="2">Minutes</th>
+			<th>Seconds</th>
+			<!-- <th>Milisecond</th> -->
+		</tr>
+		</div>
+		<div class="input">
+			<tr>
+			<td>
+				<input type="text" class="in" id="hour" name="" placeholder="00" maxlength="2" max="60">
+			</td>
+			<td>:</td>
+			<td>
+				<input type="text" class="in" id="minutes" name="" placeholder="00" maxlength="2" max="60">
+			</td>
+			<td>:</td>
+			<td>
+				<input type="text" class="in" id="seconds" name="" placeholder="00" maxlength="2" max="24">
+			</td>
+		</div>
+		
+			<!-- <td>:</td> -->
+			<!-- <td>
+				<input type="text" name="" id="mseconds" placeholder="00">
+			</td> -->
+		</tr>
+		<tr class="a">
+			<div class="button">
+				<td colspan="2">
+				<button onclick="refresh()">Refresh</button>
+			</td>
+			<td colspan="2">
+				<button onclick="start()">Start</button>
+			</td>
+			<td>
+				<button onclick="snooze()">Snooze</button>
+			</td>
+			</div>
+			
+		</tr>
+
+	</table>
+
+</body>
+</html>
